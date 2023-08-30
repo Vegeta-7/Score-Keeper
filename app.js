@@ -110,9 +110,10 @@ winningScoreSelect.addEventListener('change',function(){   // change means if we
     reset();
 })
 resetButton.addEventListener('click',reset)  
+
 function reset(){    
     isGameOver=false;
-    for(let p of {p1,p2}){
+    for(let p of [p1,p2]){
         p.score=0
         p.display.textContent=0
         p.display.classList.remove('has-text-success','has-text-danger')
